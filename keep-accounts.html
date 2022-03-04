@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="a.css"/>
+  <link rel="stylesheet" href="a.css" />
   <title>User Manual</title>
 </head>
 
@@ -13,17 +13,19 @@
 <body>
   <table width="100%">
     <tr>
-      <td width="60%"><h1>User Manual</h1></td>
-      <td width="20%"><a href = "keep-accounts-zh-hans.html">简体中文</a></td>
-      <td width="20%"><a href = "keep-accounts-zh-hant.html">繁體中文</a></td>
+      <td width="60%">
+        <h1>User Manual</h1>
+      </td>
+      <td width="20%"><a href="keep-accounts-zh-hans.html">简体中文</a></td>
+      <td width="20%"><a href="keep-accounts-zh-hant.html">繁體中文</a></td>
     </tr>
   </table>
   <h2>1. Category and Subcategory</h2>
   This application groups account records into subcategories, and group subcategories into categores.
   A set of categories and subcategories will be generated when this app is used at the first time.
   You can add/delete/modify these categories and subcategories for your requirement.
-    <p>Notice:</p>
-    <ul>
+  <p>Notice:</p>
+  <ul>
     <li>To add category, enter 'Category' tab，click <img class="symbol" src="sf/folder.fill.badge.plus.png" /> in the upper right corner.</li>
     <li>To add subcategory, first enter one of the category pages by clicking the category.
       then click<img class="symbol" src="sf/folder.fill.badge.plus.png" />in the upper right corner.
@@ -39,78 +41,84 @@
   <p>Notice:</p>
   <ul>
     <li>Enter "Settings" tab, select "Auto Record" in the upper section. Here, you can config the app to add record automatically in a specific day of each month
-        (For example, add X dollar expense at day 31 of each month for iCloud monthly service fee).
+      (For example, add X dollar expense at day 31 of each month for iCloud monthly service fee).
       If a date is not valid in certain month, the auto-created record will be set for the last day of the month.
       (February does not have day 31, so the new record date will be set to 29 February or 28 February)</li>
-    <li>When adding the record, you can add picture from the Photos or Camera in the Image tab(For example, add the image of the receipt or invoice).
+    <li>When adding record, you can add picture from the Photos or Camera in the Image tab(For example, add the image of the receipt or invoice).
       Slide finger on the image will show a green rectangle on the image. Click <span class="button">"Crop"</span> button in the bottom, will zoom in and crop the image. </li>
+    <li>When adding record, you can choose different currency by clicking the button next to amount input field.</li>
+    <li>When adding record, you can select merchants previously recorded in same subcategory by clicking <img class="symbol" src="sf/list.bullet.png" />  button next to merchant input field.</li>
   </ul>
   <h2>3. Summary</h2>
   Enter "Summary" tab, or enter "Category" tab then navigate to a subcategory page. Here you can view all the records in a particular day. The total expense and income of the whole year and month will also be shown.
   Click the year, month and day text on the top will pop up menu to switch displaying date.
   <p>Notice:</p>
   <ul>
-      <li>The popup menu for switching date will only contain date which has records.</li>
-      <li>You can select "All" to show records of the whole year(only valid in subcategory pages) or month.</li>
-      <li>You can edit/delete record by long pressing the record.</li>
-      <li>You can move the records to different subcategory. First click
-        <img class="symbol" src="sf/list.bullet.png" /> in the upper-right corner and select "Start Selection" in the popup menu.
-        Then select records which need to be moved.
-        Enter the target subcategory page, click
-          <img class="symbol" src="sf/list.bullet.png" /> in the upper-right corner and select "Move to here".
-          Click "Done selection" in the same popup menu to finish selection state.</li>
+    <li>The popup menu for switching date will only contain date which has records.</li>
+    <li>You can select "All" to show records of the whole year(only valid in subcategory pages) or month.</li>
+    <li>You can edit/delete record by long pressing the record.</li>
+    <li>You can move the records to different subcategory. First click
+      <img class="symbol" src="sf/list.bullet.png" /> in the upper-right corner and select "Start Selection" in the popup menu.
+      Then select records which need to be moved.
+      Enter the target subcategory page, click
+      <img class="symbol" src="sf/list.bullet.png" /> in the upper-right corner and select "Move to here".
+      Click "Done selection" in the same popup menu to finish selection state.
+    </li>
+    <li>In "Category" tab, click "Data Recycle". Here, you can view records deleted but not synchronized with iCloud.
+      Click "Edit" button in the top-right corner, select and move deleted records
+    to other subcategory to restore them. </li>
   </ul>
   <h2>4. Chart</h2>
   In "Chart" tab, you can view statistic on the records by different angle. For example, show total sum of the records for each year, then in each year, show total sum of the records for each month.
   By click <span class="button">"Reset"</span> in the upper right corner of "Summary fields and order" section, the following fields and order will be set for histogram:
 
   <ul>
-  <li>Balance Summary(This field can not be deleted and moved)</li>
-  <li>Yearly Summary</li>
-  <li>Monthly Summary</li>
-  <li>Daily Summary</li>
-  <li>Summary By Category</li>
-  <li>Summary By Subcategory</li>
-  <li>Summary By Merchant</li>
+    <li>Balance Summary(This field can not be deleted and moved)</li>
+    <li>Yearly Summary</li>
+    <li>Monthly Summary</li>
+    <li>Daily Summary</li>
+    <li>Summary By Category</li>
+    <li>Summary By Subcategory</li>
+    <li>Summary By Merchant</li>
   </ul>
-    By click <span class="button">"Edit"</span> in the upper right corner of "Summary fields and order" section, you can delete or reorder these fields.
+  By click <span class="button">"Edit"</span> in the upper right corner of "Summary fields and order" section, you can delete or reorder these fields.
 
   <h2>5. Settings</h2>
   <p>Enter the <span class="button">“Settings”</span> tab, here you can use following functions and settings.</p>
   <table border=1>
-   <tr>
-     <td width='100' align='center'>
-       Upgrade App<br/>(unrestricted use)
-     </td>
-     <td>Before paying for upgrading the app, you can only add 50 records and <span class="button">"Import from file"</span> function can not be used.
-       Click<span class="button">"Upgrade App at price XXX"</span> to pay and upgrade the app.
-       After upgrade, text <font color="#28e628">“Purchased”</font> will replace the upgrade button.
-       <p>Notice:<br />
-         If you reinstalled the app, or installed the app on another device after upgrading,
-         you can click <span class="button">"Restore Purchase"</span> to restore purchase state.</p>
-     </td>
-   </tr>
-   <tr>
-     <td  align='center'>
-       Sync iCloud
-     </td>
-     <td>Sync categories, subcategories and records to iCloud. The local updates will be uploaded to iCloud, and the remote changes will be downloaded to local device.
-       Note that if you have updates on same field of the same category or subcategory or record from both local and iCloud, the local update will overwrite iCloud update.</td>
-   </tr>
-   <tr>
-     <td  align='center'>
-       Export to file
-     </td>
-     <td>Export categories, subcategories and records data to CSV file.
-       Note that image data in records will be ignored.</td>
-   </tr>
-   <tr>
-     <td  align='center'>
-       Import from file
-     </td>
-     <td>Import categories, subcategories and records data from CSV file.
-       Note that only data in CSV file that does not exists in local device will be imported.</td>
-   </tr>
+    <tr>
+      <td width='100'>
+        Upgrade App<br />(unrestricted use)
+      </td>
+      <td style="text-align: start">Before paying for upgrading the app, you can only add 50 records and <span class="button">"Import from file"</span> function can not be used.
+        Click<span class="button">"Upgrade App at price XXX"</span> to pay and upgrade the app.
+        After upgrade, text <font color="#28e628">“Purchased”</font> will replace the upgrade button.
+        <p>Notice:<br />
+          If you reinstalled the app, or installed the app on another device after upgrading,
+          you can click <span class="button">"Restore Purchase"</span> to restore purchase state.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Sync iCloud
+      </td>
+      <td style="text-align: start">Sync categories, subcategories and records to iCloud. The local updates will be uploaded to iCloud, and the remote changes will be downloaded to local device.
+        Note that if you have updates on same field of the same category or subcategory or record from both local and iCloud, the local update will overwrite iCloud update.</td>
+    </tr>
+    <tr>
+      <td>
+        Export to file
+      </td>
+      <td>Export categories, subcategories and records data to CSV file.
+        Note that image data in records will be ignored.</td>
+    </tr>
+    <tr>
+      <td>
+        Import from file
+      </td>
+      <td style="text-align: start">Import categories, subcategories and records data from CSV file.
+        Note that only data in CSV file that does not exists in local device will be imported.</td>
+    </tr>
 
   </table>
 </body>

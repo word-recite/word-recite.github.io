@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="a.css"/>
+  <link rel="stylesheet" href="a.css" />
   <title>使用说明</title>
 </head>
 
@@ -19,17 +19,18 @@
     </li>
     <p>在根目录或相应父目录界面点击下方的<span class="button">"添加目录"</span> ，
       有两种类型的目录供选择，分别可包含单词和子目录。<br>
+      单词目录可以设置字典类型，包括英文字典、日文字典、无字典，缺省为英文字典。某些功能需要设置特定字典后才可以使用。
       在可包含目录的目录界面中，可以用同样的方式添加子目录。</p>
     <li>
       <h3>编辑目录</h3>
     </li>
     <p>长按目录（Mac点击鼠标右键）选择<span class="button">“重命名”</span>。</p>
 
-        <li>
-          <h3>删除目录</h3>
-        </li>
-        <p>长按目录（Mac点击鼠标右键）选择<span class="button">"删除"</span></p>
-        <p>注意：目录下的单词和子目录都会被删除。</p>
+    <li>
+      <h3>删除目录</h3>
+    </li>
+    <p>长按目录（Mac点击鼠标右键）选择<span class="button">"删除"</span></p>
+    <p>注意：目录下的单词和子目录都会被删除。</p>
 
   </ul>
 
@@ -47,11 +48,12 @@
       </tr>
       <tr>
         <td>查询并添加</td>
-        <td>在包含单词的目录界面点击下方的<img class="symbol" src="sf/magnifyingglass.circle.png" />按钮，
+        <td style="text-align: start">在包含单词的目录界面点击下方的<img class="symbol" src="sf/magnifyingglass.circle.png" />按钮，
           输入要添加的单词并换行。<br>
           在弹出的添加单词界面核对并补充相关信息，之后点击上方的<span class="button">"添加"</span>按钮。
           <p>注意：</p>
           <ul>
+            <li>目录字典设为“无”时不可用。</li>
             <li>仅支持英语、日语单词的查询。</li>
             <li>可以使用简体字代替日文汉字查询日语单词</li>
             <li>如果查询单词有时态的变化，会提示单词的原型</li>
@@ -62,12 +64,12 @@
       </tr>
       <tr>
         <td>直接添加</td>
-        <td>点击下方的<span class="button">"添加单词"</span>按钮，并选择<span class="button">手动添加</span>。
+        <td style="text-align: start">点击下方的<span class="button">"添加单词"</span>按钮，并选择<span class="button">手动添加</span>。
           <br />在添加单词界面填入单词，释义，备注信息，并选择语言以实现单词的正确发音。<br />
           填好后，点击上方的<span class="button">"添加"</span>按钮。
-        <p>注意：</p>
+          <p>注意：</p>
           <ul>
-            <li>可以点击右侧<img class="symbol" src="sf/speaker.png" />按钮测试发音。可以在应用的最下方选择<span class="button">“设置”</span>，调整语音速率。</li>
+            <li>不同地区的语言有不同的语音，如英语(美国）和英语(英国)。可以点击右侧<img class="symbol" src="sf/speaker.png" />按钮测试发音。可以在应用的最下方选择<span class="button">“设置”</span>，调整语音速率。</li>
             <li>可以点击单词输入框右侧<img class="symbol" src="sf/magnifyingglass.circle.png" />按钮，查询单词的释义。</li>
             <li>选中下方"连续添加单词", 点击<span class="button">"添加"</span>按钮后不会关闭当前窗口，从而可以继续添加其他单词。</li>
           </ul>
@@ -75,27 +77,29 @@
       </tr>
       <tr>
         <td>从图片库添加</td>
-        <td>在包含单词的目录界面点击下方的<span class="button">"添加单词"</span>按钮，
+        <td style="text-align: start">在包含单词的目录界面点击下方的<span class="button">"添加单词"</span>按钮，
           选择<span class="button">通过图片添加</span>，在图片库中选择图片。<br />
           用手指在图片上滑动会显示一个绿色边框的方块， <br>点击下方的<span class="button">"剪切"</span>按钮可以剪切并放大方块内的图像。<br />
           点击<span class="button">"识别"</span>按钮会识别方块内的文字，
           如果识别成功将显示单词选择菜单，选择一个单词后会出现添加单词界面，之后操作与查询并添加方式相同。
-          <p>注意：</p>仅支持英语单词。</td>
+          <p>注意：</p>仅支持英语单词，目录字典需要设为英文。
+        </td>
       </tr>
       <tr>
         <td>通过拍照添加</td>
-        <td>在包含单词的目录界面点击下方的<span class="button">"添加单词"</span>按钮，
+        <td style="text-align: start">在包含单词的目录界面点击下方的<span class="button">"添加单词"</span>按钮，
           选择<span class="button">通过拍照添加。</span>
           <br />之后操作与从图片库添加方式相同。
-        <p>注意：</p>仅支持英语单词。</td>
+          <p>注意：</p>仅支持英语单词，目录字典需要设为英文。
+        </td>
       </tr>
 
       <tr>
         <td>手写输入并添加</td>
-        <td>在包含单词的目录界面点击下方的<img class="symbol" src="sf/magnifyingglass.circle.png" />按钮，<br />
+        <td style="text-align: start">在包含单词的目录界面点击下方的<img class="symbol" src="sf/magnifyingglass.circle.png" />按钮，<br />
           再点击文本框左侧的<img class="symbol" src="sf/pencil.and.outline.png" />按钮，进行手写输入。<br />
           输入完成后点击<span class="button">查询</span>。<br>
-          之后操作与查询并添加方式相同。<p>注意：</p>仅支持日语假名和汉字的输入</td>
+          之后操作与查询并添加方式相同。<p>注意：</p>仅支持日语假名和汉字的输入，目录字典需要设为日文。</td>
       </tr>
     </table>
     <p>注意: <span class="button">添加单词</span>按钮右侧的忘记次数必须选择<span class="button">"忘记0次以上"</span>时，才可以添加单词。</p>
@@ -139,8 +143,18 @@
     点开右上方<img class="symbol" src="sf/list.bullet.png" />按钮，选择<span class="button">“移动至此”</span>。
   </p>
 
+  <h2>4. 数据回收</h2>
+  进入根目录下的"数据回收", 在下次iCloud同步之前可以找回被删除的目录或单词。
+  <ul>
+    <li>还原被删除的目录</li> <p>请长按目录名称，选择<span class="button">“还原”</span>以还原单个目录，
+      或<span class="button">“深度还原”</span>以还原目录及其下子目录和单词。</p>
+    <li>还原被删除的单词</li> <p>使用第3节的方法将单词移动到正常的目录下即可还原。</p>
+    <li>悬空数据</li> <p>如果向一个目录中添加了未同步过的单词或子目录，而在iCloud同步时，此目录被其他设备删除，目录下的单词和子目录会成为悬空数据，此数据也可以在"数据回收"下还原。
+      注意，悬空数据只有进入"数据回收"查看过后，下次iCloud同步才会删除，否则将一直保留。</p>
 
-  <h2>4. 背单词</h2>
+  </ul>
+
+  <h2>5. 背单词</h2>
 
   <p>&nbsp;&nbsp;&nbsp;&nbsp;在包含单词的目录界面,可以选择以下三种模式</p>
   <table border="1">
@@ -148,24 +162,24 @@
       <td width="100" align="center">
         记忆模式
       </td>
-      <td>
+      <td style="text-align: start">
         界面上显示单词和释义，详细信息可以点击单词查看。<br>可点击右侧<img class="symbol" src="sf/speaker.png" />按钮收听单词语音。
       </td>
     </tr>
     <tr>
-      <td  align="center">
+      <td align="center">
         测试模式
       </td>
-      <td>
+      <td style="text-align: start">
         界面仅显示单词，可点击单词检查单词释义，根据情况选择<span class="button">“记住了”</span>或<span class="button">“忘了”</span>。<br />
         点击<span class="button">“忘了”</span>，会增加单词的忘记次数计数。<br>测试过的单词会显示释义。
       </td>
     </tr>
     <tr>
-      <td  align="center">
+      <td align="center">
         听力模式
       </td>
-      <td>
+      <td style="text-align: start">
         界面仅显示<span class="button">"播放"</span>和<span class="button">"查看单词"</span>按钮，
         点击<span class="button">"播放"</span>收听单词语音。
         <br>点击<span class="button">"查看单词"</span>检查单词释义，操作与测试模式相同。
@@ -175,11 +189,11 @@
   <p>&nbsp;&nbsp;&nbsp;&nbsp;每轮测试或听力结束后，会提示进入下一轮对忘记单词的测试。
     也可选择下方<span class="button">“忘记X次以上”</span>菜单，以过滤已经记住的单词。</p>
   <p>&nbsp;&nbsp;&nbsp;&nbsp;点开右上方的<img class="symbol" src="sf/list.bullet.png" />按钮可以看到下列选项：</p>
-    <ul>
-      <li>选择<span class="button">“乱序”</span>，可以重新排列单词。</li>
-      <li>选择<span class="button">“切换测试对象”</span>，在测试模式可以根据释义测试单词。</li>
-      <li>选择<span class="button">“重置”</span>，恢复到缺省顺序（单词添加的顺序），并设置单词为未测试状态（不会清除忘记次数）。</li>
-    </ul>
+  <ul>
+    <li>选择<span class="button">“乱序”</span>，可以重新排列单词。</li>
+    <li>选择<span class="button">“切换测试对象”</span>，在测试模式可以根据释义测试单词。</li>
+    <li>选择<span class="button">“重置”</span>，恢复到缺省顺序（单词添加的顺序），并设置单词为未测试状态（不会清除忘记次数）。</li>
+  </ul>
 
 
 
@@ -189,14 +203,14 @@
     <source src="demo/recite.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <h2>5. 设置</h2>
+  <h2>6. 设置</h2>
   <p>点击应用下方的<span class="button">“设置”</span>，可以看到以下按钮和功能</p>
   <table border=1>
     <tr>
-      <td width='100' align='center'>
+      <td width='100'>
         升级软件<br />(无限制使用）
       </td>
-      <td>未购买本软件之前只能添加50个单词，且不能使用<span class="button">"从文件导入"</span>功能。
+      <td style="text-align: start">未购买本软件之前只能添加50个单词，且不能使用<span class="button">"从文件导入"</span>功能。
         点击<span class="button">"以XX价格购买本软件"</span>，
         成功购买后会显示<font color="#28e628">“已购买”</font>。
         <p>注意:<br />
@@ -204,57 +218,57 @@
       </td>
     </tr>
     <tr>
-      <td  align='center'>
+      <td>
         同步iCloud
       </td>
-      <td>同步单词、目录以及记录界面（第5节）显示的数据到iCloud，不包括单词忘记次数。
+      <td style="text-align: start">同步单词、目录以及记录界面（第5节）显示的数据到iCloud，不包括单词忘记次数。
         同步时会自动检测本地的更改并上传到iCloud，同时下载iCloud上的更新到本地。
         如果本地和iCloud上数据在相同字段都有更新，则以本地更新优先。</td>
     </tr>
     <tr>
-      <td  align='center'>
+      <td>
         自动同步
-      </td>
-      <td>选中后，系统会每隔2分钟自动同步iCloud，但如果本地没有更新，则不会同步。</td>
+      </td style="text-align: start">
+      <td style="text-align: start">选中后，系统会每隔2分钟自动同步iCloud，但如果本地没有更新，则不会同步。</td>
     </tr>
     <tr>
-      <td  align='center'>
+      <td>
         导出到文件
       </td>
-      <td>导出单词和目录到CSV文件。不会导出单词的忘记次数和记录界面（第5节）显示的数据，</td>
+      <td style="text-align: start">导出单词和目录到CSV文件。不会导出单词的忘记次数和记录界面（第5节）显示的数据，</td>
     </tr>
     <tr>
-      <td  align='center'>
+      <td>
         从文件导入
       </td>
-      <td>从CSV文件导入单词和目录，导入时会忽略CSV文件中本地已存在的记录。</td>
+      <td style="text-align: start">从CSV文件导入单词和目录，导入时会忽略CSV文件中本地已存在的记录。</td>
     </tr>
     <tr>
       <td align='center'>
         语音速率
       </td>
-      <td>调整单词语音的速率。范围在0到1之间，数值越大，速率越快。参考第2节"直接添加"。</td>
+      <td style="text-align: start">调整单词语音的速率。范围在0到1之间，数值越大，速率越快。参考第2节"直接添加"。</td>
     </tr>
     <tr>
-      <td  align='center'>
+      <td>
         意见反馈
       </td>
-      <td>如果使用中遇到了任何问题，可以点击此按钮，选择<span class="button">通过邮件反馈</span>、<span class="button">匿名反馈</span>、
+      <td style="text-align: start">如果使用中遇到了任何问题，可以点击此按钮，选择<span class="button">通过邮件反馈</span>、<span class="button">匿名反馈</span>、
         和在AppStore<span class="button">给App评分</span>中的一种方式进行问题反馈。</td>
     </tr>
     <tr>
-      <td  align='center'>
+      <td>
         版本更新
       </td>
-      <td>跳转到AppStore页面，以便进行应用软件升级。如果本应用有了新的版本，会在此按钮旁边显示一个红点。</td>
+      <td style="text-align: start">跳转到AppStore页面，以便进行应用软件升级。如果本应用有了新的版本，会在此按钮旁边显示一个红点。</td>
     </tr>
     <tr>
-      <td  align='center'>
+      <td>
         帮助
       </td>
       <td>查看软件使用说明(本页面)</td>
     <tr>
-      <td  align='center'>
+      <td>
         关于
       </td>
       <td>查看应用版本号</td>
@@ -262,7 +276,7 @@
   </table>
 
 
-  <h2>6. 常见问题</h2>
+  <h2>7. 常见问题</h2>
   <ol>
     <li>使用iCloud上传时遇到<font color="grey">“CloudKit access was denied by user setting”</font>错误
       <p>请确保在 系统设置 > AppleID > iCloud 中 “iCloud云盘” 被选中</p>
