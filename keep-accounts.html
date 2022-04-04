@@ -22,40 +22,46 @@
   </table>
   <h2>1. Category and Subcategory</h2>
   This application groups account records into subcategories, and group subcategories into categores.
-  A set of categories and subcategories will be generated when this app is used at the first time.
-  You can add/delete/modify these categories and subcategories for your requirement.
+  After click <span class="button">"Import built-in category list"</span> in "Category" tab, a set of categories and subcategories will be generated.
+  You can add/delete/modify these categories and subcategories for your requirement in "Category" tab.
   <p>Notice:</p>
   <ul>
-    <li>To add category, enter 'Category' tab，click <img class="symbol" src="sf/folder.fill.badge.plus.png" /> in the upper right corner.</li>
-    <li>To add subcategory, first enter one of the category pages by clicking the category.
-      then click<img class="symbol" src="sf/folder.fill.badge.plus.png" />in the upper right corner.
-      The subcategory can be created as an incoming subcategory which only contains incoming records,
+    <li>When adding subcategory, the subcategory can be created as an incoming subcategory which only contains incoming records,
       or an expense subcategory which only contains expense records.
-    <li>To edit/delete a category, long press the name of the category, select 'Edit' or 'Delete' in the popup menu.
-      To edit/delete a subcategory, enter the category which contains the subcategory, long press the name of the subcategory and select corresponding item in the popup menu.
+    <li>To edit/delete a category/subcategory, long press the name of the category, select 'Edit' or 'Delete' in the popup menu.
     </li>
   </ul>
   <h2>2. Book keeping</h2>
-  Enter 'Category' or 'Summary' page, click <span class="button">"Record"</span> button.
-  filling information of the new record, click <span class="button">"Add"</span> in the upper right corner.
-  <p>Notice:</p>
-  <ul>
-    <li>Enter "Settings" tab, select "Auto Record" in the upper section. Here, you can config the app to add record automatically in a specific day of each month
-      (For example, add X dollar expense at day 31 of each month for iCloud monthly service fee).
-      If a date is not valid in certain month, the auto-created record will be set for the last day of the month.
-      (February does not have day 31, so the new record date will be set to 29 February or 28 February)</li>
-    <li>When adding record, you can add picture from the Photos or Camera in the Image tab(For example, add the image of the receipt or invoice).
-      Slide finger on the image will show a green rectangle on the image. Click <span class="button">"Crop"</span> button in the bottom, will zoom in and crop the image. </li>
-    <li>When adding record, you can choose different currency by clicking the button next to amount input field.</li>
-    <li>When adding record, you can select merchants previously recorded in same subcategory by clicking <img class="symbol" src="sf/list.bullet.png" />  button next to merchant input field.</li>
-  </ul>
+  <p>Enter 'Category' tab, click one subcategory or enter 'Summary' tab, then click <span class="button">"Add Record"</span> button,
+  fill information of the new record, click <span class="button">"Add"</span> in the upper right corner.
+  </p>
+  <table border=1 width=100%>
+    <tr><td width=100>Fields</td><td width=100>Place</td><td>Notes</td></tr>
+    <tr><td>Amount</td><td>Detail tab</td><td style="text-align: start">
+      you can choose different currency by clicking the button next to amount input field.
+      <br/>You can input +,-,* to do simple calulation in amount input field.
+    </td></tr>
+    <tr><td>Merchant</td><td>Detail tab</td><td style="text-align: start">
+      You can select from merchants previously recorded in same subcategory by clicking <img class="symbol" src="sf/list.bullet.png" />  button next to merchant input field.
+    </td></tr>
+    <tr><td>Image</td><td>Image tab</td><td style="text-align: start">
+      You can add picture from the Photos or Camera in Image tab(For example, add an image of receipt or invoice).
+    </td></tr>
+    <tr><td>Label</td><td>Detail tab</td><td style="text-align: start">
+      Mark record with a label defined in "Settings"/"Advanced" page.
+      The summary of different labels can be viewed at "Chart" tab.
+    </td></tr>
+    <tr><td>Detail<br/>Date</td><td>Detail tab</td><td style="text-align: start">
+      Click right arrow button, fill information in expanded view.
+    </td></tr>
+  </table>
   <h2>3. Summary</h2>
-  Enter "Summary" tab, or enter "Category" tab then navigate to a subcategory page. Here you can view all the records in a particular day. The total expense and income of the whole year and month will also be shown.
+  Enter 'Category' tab, click one subcategory or enter 'Summary' tab, here you can view all the records in a particular day. The total expense and income of the whole year and month will also be shown.
   Click the year, month and day text on the top will pop up menu to switch displaying date.
   <p>Notice:</p>
   <ul>
     <li>The popup menu for switching date will only contain date which has records.</li>
-    <li>You can select "All" to show records of the whole year(only valid in subcategory pages) or month.</li>
+    <li>You can select "All" to show records of the whole year(only valid in Category tab) or month.</li>
     <li>You can edit/delete record by long pressing the record.</li>
     <li>You can move the records to different subcategory. First click
       <img class="symbol" src="sf/list.bullet.png" /> in the upper-right corner and select "Start Selection" in the popup menu.
@@ -74,6 +80,7 @@
 
   <ul>
     <li>Balance Summary(This field can not be deleted and moved)</li>
+    <li>Summary By Label</li>
     <li>Yearly Summary</li>
     <li>Monthly Summary</li>
     <li>Daily Summary</li>
@@ -119,7 +126,18 @@
       <td style="text-align: start">Import categories, subcategories and records data from CSV file.
         Note that only data in CSV file that does not exists in local device will be imported.</td>
     </tr>
-
+  <tr>
+    <td>Add record template<br>(Advanced page)</td>
+    <td>You can config the app to add record automatically in a specific day of each month
+      (For example, add X dollar expense at day 31 of each month for iCloud monthly service fee).
+      If a date is not valid in certain month, the auto-created record will be set for the last day of the month.
+      (February does not have day 31, so the new record date will be set to 29 February or 28 February)
+  </td>
+  </tr>
+  <tr>
+    <td>Add Label<br>(Advanced page)</td>
+    <td>You can add self defined label and mark each record with a label. The summary of different labels can be viewed at "Chart" tab.</td>
+  </tr>
   </table>
 </body>
 
