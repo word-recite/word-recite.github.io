@@ -14,7 +14,7 @@
   <table width="100%">
     <tr>
       <td width="60%">
-        <h1>User Manual</h1>
+        <h1>User Manual (v1.09)</h1>
       </td>
       <td width="20%"><a href="keep-accounts-zh-hans.html">简体中文</a></td>
       <td width="20%"><a href="keep-accounts-zh-hant.html">繁體中文</a></td>
@@ -32,29 +32,56 @@
     </li>
   </ul>
   <h2>2. Book keeping</h2>
-  <p>Enter 'Category' tab, click one subcategory or enter 'Summary' tab, then click <span class="button">"Add Record"</span> button,
+  <p>Enter 'Category' tab, click one subcategory or enter 'Summary' tab, then click <span class="button">"Add record"</span> button,
   fill information of the new record, click <span class="button">"Add"</span> in the upper right corner.
   </p>
   <table border=1 width=100%>
-    <tr><td width=100>Fields</td><td width=100>Place</td><td>Notes</td></tr>
-    <tr><td>Amount</td><td>Detail tab</td><td style="text-align: start">
+    <tr><td width=100>Fields</td><td>Notes</td></tr>
+    <tr><td>Amount</td><td style="text-align: start">
       you can choose different currency by clicking the button next to amount input field.
       <br/>You can input +,-,* to do simple calulation in amount input field.
     </td></tr>
-    <tr><td>Merchant</td><td>Detail tab</td><td style="text-align: start">
+    <tr><td>Merchant</td><td style="text-align: start">
       You can select from merchants previously recorded in same subcategory by clicking <img class="symbol" src="sf/list.bullet.png" />  button next to merchant input field.
     </td></tr>
-    <tr><td>Image</td><td>Image tab</td><td style="text-align: start">
-      You can add picture from the Photos or Camera in Image tab(For example, add an image of receipt or invoice).
-    </td></tr>
-    <tr><td>Label</td><td>Detail tab</td><td style="text-align: start">
+    <tr><td>Label</td><td style="text-align: start">
       Mark record with a label defined in "Settings"/"Advanced" page.
       The summary of different labels can be viewed at "Chart" tab.
     </td></tr>
-    <tr><td>Detail<br/>Date</td><td>Detail tab</td><td style="text-align: start">
+    <tr><td>Date</td><td style="text-align: start">
       Click right arrow button, fill information in expanded view.
     </td></tr>
+    <tr><td>Detail</td><td style="text-align: start">
+      Click <img class="symbol" src="sf/square.and.pencil.png" /> on the right and fill the information。
+    </td></tr>
+    <tr><td>Continuous add</td><td style="text-align: start">
+      The dialog will not be closed after clicking <span class="button">"Add"</span>，so that you can add next record.
+      This is also supported in label, category and auto-insert template adding dailog。
+    </td></tr>
   </table>
+  <p>
+      By clicking  <span class="button">"Add record with image"</span>, you can add record with picture from the Photos or Camera(For example, add an image of receipt or invoice).
+      You can also add an image by dragging it from other app to the image area.
+  </p>
+    <p>
+      You can use your finger to drag a green rectangle on the image to select a region of image and click <span class="button">"Crop"</span> to crop the region out of image.
+
+    </p>
+  <p>
+      Click "Analyse", list of money amount, date, merchants will be prompt in a new window if there is any contained in selected image region(or the whole image if no selection).
+      Three categories will also be prompt for selection.
+      <p>Notice：</p>
+      <ul>
+        <li>The merchants information can only be recongnized when there is at least one previous record contains the information.</li>
+        <li>It is better to select relavent region before click "Analyse" to improve accuracy</li>
+        <li>The suggested categories in <span class="button">“Analyse”</span> is based on existing record's details, merchants and text in attached images.
+          If there are too few of these information, the suggestion may not be accurate.</li>
+        <li>If there are many existing records attached with image，<span class="button">“Analyse”</span>may not give suggestion on categories in the first time of use.
+          this is because system is busy with analyzing current records，it may work after a while.</li>
+      </ul>
+
+</p>
+
   <h2>3. Summary</h2>
   Enter 'Category' tab, click one subcategory or enter 'Summary' tab, here you can view all the records in a particular day. The total expense and income of the whole year and month will also be shown.
   Click the year, month and day text on the top will pop up menu to switch displaying date.
@@ -62,6 +89,7 @@
   <ul>
     <li>The popup menu for switching date will only contain date which has records.</li>
     <li>You can select "All" to show records of the whole year(only valid in Category tab) or month.</li>
+    <li>You can click the record to view more information, you can click the image if any to enlarge it.</li>
     <li>You can edit/delete record by long pressing the record.</li>
     <li>You can move the records to different subcategory. First click
       <img class="symbol" src="sf/list.bullet.png" /> in the upper-right corner and select "Start Selection" in the popup menu.
@@ -73,6 +101,7 @@
     <li>In "Category" tab, click "Data Recycle". Here, you can view records deleted but not synchronized with iCloud.
       Click "Edit" button in the top-right corner, select and move deleted records
     to other subcategory to restore them. </li>
+    <li>In "Category" tab, click "Search records". Here, you can use keyword to search in all records's detail and merchant information. </li>    
   </ul>
   <h2>4. Chart</h2>
   In "Chart" tab, you can view statistic on the records by different angle. For example, show total sum of the records for each year, then in each year, show total sum of the records for each month.
@@ -94,7 +123,7 @@
   <p>Enter the <span class="button">“Settings”</span> tab, here you can use following functions and settings.</p>
   <table border=1>
     <tr>
-      <td width='100'>
+      <td width='150'>
         Upgrade App<br />(unrestricted use)
       </td>
       <td style="text-align: start">Before paying for upgrading the app, you can only add 50 records and <span class="button">"Import from file"</span> function can not be used.
@@ -114,6 +143,18 @@
     </tr>
     <tr>
       <td>
+        Auto-Sync
+      </td>
+      <td style="text-align: start">Automatically synchronize iCloud every 2 minutes.</td>
+    </tr>
+    <tr>
+      <td>
+        Owner authenticate
+      </td>
+      <td style="text-align: start">Authenticate using FaceID, TouchID or Password after entering the app to protected your privacy.</td>
+    </tr>
+    <tr>
+      <td>
         Export to file
       </td>
       <td>Export categories, subcategories and records data to CSV file.
@@ -127,7 +168,7 @@
         Note that only data in CSV file that does not exists in local device will be imported.</td>
     </tr>
   <tr>
-    <td>Add record template<br>(Advanced page)</td>
+    <td>Auto-insert template</td>
     <td>You can config the app to add record automatically in a specific day of each month
       (For example, add X dollar expense at day 31 of each month for iCloud monthly service fee).
       If a date is not valid in certain month, the auto-created record will be set for the last day of the month.
@@ -135,10 +176,53 @@
   </td>
   </tr>
   <tr>
-    <td>Add Label<br>(Advanced page)</td>
-    <td>You can add self defined label and mark each record with a label. The summary of different labels can be viewed at "Chart" tab.</td>
+    <td>Label Management</td>
+    <td>Add self defined label, you can mark each record with one of labels you defined. The summary of different labels can be viewed at "Chart" tab.</td>
   </tr>
   </table>
+  <h2>6. Import/Export cvs file format</h2>
+
+  <p>Each line in imported/exported cvs file contains data of one category, subcategory, label or record, seperated by comma.</p>
+  Category contains following fields:
+  <ol>
+    <li>0</li>
+    <li>Category id, any string that can uniquely identify the category.</li>
+    <li>Category name</li>
+  </ol>
+  Subcategory contains following fields:
+  <ol>
+    <li>1</li>
+    <li>Subcategory id, any string that can uniquely identify the subcategory.</li>
+    <li>Subcategory name</li>
+    <li>Parent category id</li>
+    <li>true -- incoming subcategory, false -- Expense subcategory</li>
+  </ol>
+  Record contains following fields:
+  <ol>
+    <li>2</li>
+    <li>Record id, any string that can uniquely identify the record.</li>
+    <li>Parent subcategory id</li>
+    <li>Eecord date(year-month-day hour:minute), ex. 2022-01-12 05:15</li>
+    <li>Amount, ex. 100.00</li>
+    <li>0</li>
+    <li>Merchant</li>
+    <li>Detail</li>
+    <li>Label id</li>
+  </ol>
+  labels contains following fields:
+  <ol>
+    <li>3</li>
+    <li>Label id，any string that can uniquely identify the label.</li>
+    <li>Label name</li>
+    <li>Label color：RGB color value ranged from 0 to 1, seperated by |， ex. "0.5|0|0.5"</li>
+  </ol>
+  <h2>7. Demo video</h2>
+<p>
+        <video width="310" height="672" controls>
+          <source src="demo/extract_info_en.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+</p>
 </body>
 
 </html>

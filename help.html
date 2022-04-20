@@ -102,8 +102,6 @@
           之后操作与查询并添加方式相同。<p>注意：</p>仅支持日语假名和汉字的输入，目录字典需要设为日文。</td>
       </tr>
     </table>
-    <p>注意: <span class="button">添加单词</span>按钮右侧的忘记次数必须选择<span class="button">"忘记0次以上"</span>时，才可以添加单词。</p>
-
 
     <li>
       <h3>编辑单词</h3>
@@ -142,6 +140,14 @@
     选好后在相同菜单中点击<span class="button">“完成选择”</span>。移动到目标目录，
     点开右上方<img class="symbol" src="sf/list.bullet.png" />按钮，选择<span class="button">“移动至此”</span>。
   </p>
+    <p>注意：
+      <ul>
+        <li>macOS 12， iOS15，iPadOS15及以上版本的系统，也可以通过鼠标或手指直接将单词拖放到单词目录。</li>
+        <li>如果希望一次拖动多个单词，可以点击<span class="button">“开始选择”</span>后选择多个单词并拖放。</li>
+        <li>iPhone，iPad上拖放的方法为：长按单词然后拖拽到目标目录，等待出现加号后松开。如果目标目录不在当前窗口显示，可以使用另一只手操作，移动到包含目录的窗口。</li>
+        <li>如果将单词移动到"数据回收"目录（见第4节），单词将被删除。</li>
+      </ul>
+  </p>
 
   <h2>4. 数据回收</h2>
   进入根目录下的"数据回收", 在下次iCloud同步之前可以找回被删除的目录或单词。
@@ -149,9 +155,10 @@
     <li>还原被删除的目录</li> <p>请长按目录名称，选择<span class="button">“还原”</span>以还原单个目录，
       或<span class="button">“深度还原”</span>以还原目录及其下子目录和单词。</p>
     <li>还原被删除的单词</li> <p>使用第3节的方法将单词移动到正常的目录下即可还原。</p>
-    <li>悬空数据</li> <p>如果向一个目录中添加了未同步过的单词或子目录，而在iCloud同步时，此目录被其他设备删除，目录下的单词和子目录会成为悬空数据，此数据也可以在"数据回收"下还原。
+    <li>悬空数据</li>
+    <p>如果向一个目录中添加了未同步过的单词或子目录，而在iCloud同步时，此目录被其他设备删除，目录下的单词和子目录会成为悬空数据，此数据也可以在"数据回收"下还原。
+      另外，使用文件导入的单词或目录，如果父目录不存在，也会变为悬空数据。
       注意，悬空数据只有进入"数据回收"查看过后，下次iCloud同步才会删除，否则将一直保留。</p>
-
   </ul>
 
   <h2>5. 背单词</h2>
@@ -229,7 +236,7 @@
       <td>
         自动同步
       </td style="text-align: start">
-      <td style="text-align: start">选中后，系统会每隔2分钟自动同步iCloud，但如果本地没有更新，则不会同步。</td>
+      <td style="text-align: start">选中后，系统会每隔2分钟自动同步iCloud。</td>
     </tr>
     <tr>
       <td>
@@ -241,7 +248,9 @@
       <td>
         从文件导入
       </td>
-      <td style="text-align: start">从CSV文件导入单词和目录，导入时会忽略CSV文件中本地已存在的记录。</td>
+      <td style="text-align: start">
+        从CSV文件导入单词和目录，导入时会忽略CSV文件中本地已存在的记录。
+      </td>
     </tr>
     <tr>
       <td align='center'>
@@ -249,40 +258,34 @@
       </td>
       <td style="text-align: start">调整单词语音的速率。范围在0到1之间，数值越大，速率越快。参考第2节"直接添加"。</td>
     </tr>
-    <tr>
-      <td>
-        意见反馈
-      </td>
-      <td style="text-align: start">如果使用中遇到了任何问题，可以点击此按钮，选择<span class="button">通过邮件反馈</span>、<span class="button">匿名反馈</span>、
-        和在AppStore<span class="button">给App评分</span>中的一种方式进行问题反馈。</td>
-    </tr>
-    <tr>
-      <td>
-        版本更新
-      </td>
-      <td style="text-align: start">跳转到AppStore页面，以便进行应用软件升级。如果本应用有了新的版本，会在此按钮旁边显示一个红点。</td>
-    </tr>
-    <tr>
-      <td>
-        帮助
-      </td>
-      <td>查看软件使用说明(本页面)</td>
-    <tr>
-      <td>
-        关于
-      </td>
-      <td>查看应用版本号</td>
-    </tr>
   </table>
 
+  <h2>7. 导入/导出文件格式</h2>
 
-  <h2>7. 常见问题</h2>
+  <p>导入/导出CSV文件中每一行包含一个目录或单词的数据,各字段用逗号分隔。</p>
+  目录包含以下字段：
   <ol>
-    <li>使用iCloud上传时遇到<font color="grey">“CloudKit access was denied by user setting”</font>错误
-      <p>请确保在 系统设置 > AppleID > iCloud 中 “iCloud云盘” 被选中</p>
-    <li>单词语音不出声
-      <p>请检查手机静音键，确保手机没有静音</p>
+    <li>D</li>
+    <li>目录ID，任意可唯一标识目录的字符串</li>
+    <li>目录名称</li>
+    <li>父目录ID</li>
+    <li>创建时间戳，当前时间距离2001年1月1日零点的秒数.</li>
+    <li>内容：0 -- 包含单词，1 -- 包含目录</li>
+    <li>字典类型： 0 -- 英文， 1 -- 日文， 2 -- 无</li>
   </ol>
+
+单词包含以下字段：
+<ol>
+  <li>W</li>
+  <li>单词ID，任意可唯一标识单词的字符串</li>
+  <li>单词</li>
+  <li>父目录ID</li>
+  <li>创建时间戳，当前时间距离2001年1月1日零点的秒数.</li>
+  <li>单词释义</li>
+  <li>单词发音语言，例如：en-US, ja-JP</li>
+  <li>单词详情</li>
+</ol>
+
 </body>
 
 </html>

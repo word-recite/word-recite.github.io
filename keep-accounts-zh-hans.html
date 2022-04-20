@@ -13,18 +13,28 @@
   <table width="100%">
     <tr>
       <td width="60%">
-        <h1>使用说明</h1>
+        <h1>使用说明 (v1.09)</h1>
       </td>
       <td width="20%"><a href="keep-accounts-zh-hant.html">繁體中文</a></td>
       <td width="20%"><a href="keep-accounts.html">English</a></td>
     </tr>
   </table>
+  <table width="50%" border = 1>
+    <tr>
+      <td>
+        教学视频
+      </td>
+      <td><a href="https://weibo.com/tv/show/1034:4786734245019757">基本功能使用</a></td>
+    </tr>
+  </table>
+  <!-- TRANSLATE START -->
   <h2>1. 账目分类和子分类</h2>
   系统将账目记录划分为：分类 -> 子分类 -> 记录 三级管理。每条记录隶属于一个子分类，每个子分类隶属于一个分类。
   您可以进入"分类"标签页对分类进行管理。
   首次使用时,可以点击"导入内置分类列表"，系统会自动添加一组分类和子分类。您可以自行调整这些分类以适应您的需求。
   <p>注意：</p>
   <ul>
+    <li>添加子分类时，需要选择“收入”或“支出”类型。收入子分类中的记录全部为收入记录，支出子分类同理。</li>
     <li>长按分类或子分类名称，在弹出菜单中可以选择
       <span class="button">"编辑"</span>或<span class="button">"删除"</span>分类或子分类。注意删除后，其下的子分类和记录都会被删除。
     </li>
@@ -33,24 +43,41 @@
   <p>进入"分类"标签页,点击一个子分类或进入"汇总"标签页，点击<span class="button">"添加记录"</span>按钮。
   在弹出的窗口中填入相应信息后点击右上角的<span class="button">"添加"</span>。有如下信息可以输入：</p>
   <table border=1 width=100%>
-    <tr><td width=100>字段</td><td width=100>位置</td><td>注意</td></tr>
-    <tr><td>金额</td><td>详情页</td><td style="text-align: start">
+    <tr><td width=100>字段</td><td>注意</td></tr>
+    <tr><td>金额</td><td style="text-align: start">
       点击金额右侧的按钮可以选择其他货币，系统会自动换算成当前货币对应金额。<br/>可以输入+，-，*进行简单运算。
     </td></tr>
-    <tr><td>商家</td><td>详情页</td><td style="text-align: start">
+    <tr><td>商家</td><td style="text-align: start">
       点击商家右侧的<img class="symbol" src="sf/list.bullet.png" />按钮可以显示之前在相同子分类下记录过的商家列表。
     </td></tr>
-    <tr><td>图像</td><td>图像页</td><td style="text-align: start">点击上方"图像"页，添加图片或拍照（如拍下消费收据或发票的图片）。
-      用手指在图片上滑动会显示一个绿色边框的方块， 点击下方的<span class="button">"剪切"</span>按钮可以剪切并放大方块内的图像。
-    </td></tr>
-    <tr><td>标签</td><td>详情页</td><td style="text-align: start">
+
+    <tr><td>标签</td><td style="text-align: start">
       用在"设置">"高级"页中定义的标签标记记录，之后可以在“图表”页查看不同标签下的数据汇总。
     </td></tr>
-    <tr><td>详情<br/>日期</td><td>详情页</td><td style="text-align: start">
+
+    <tr><td>日期</td><td style="text-align: start">
       点击右侧箭头，在展开的内容中填入信息。
     </td></tr>
-
+    <tr><td>详情</td><td style="text-align: start">
+      点击右侧的<img class="symbol" src="sf/square.and.pencil.png" />按钮后填入信息。
+    </td></tr>
+    <tr><td>连续添加</td><td style="text-align: start">
+      选中后点击<span class="button">"添加"</span>不会关闭窗口，以便添加下一笔记录。添加分类、标签、自动记录模版时也可以同样操作。
+    </td></tr>
 </table>
+  <p>
+    如果有账目相关的图片可以记录（如拍下消费收据或发票的图片），可以点击<span class="button">"添加图片记录"</span>。
+并点击弹出界面中的<span class="button">"拍照"</span>或<span class="button">"图库"</span>。也可以直接将图片从其他APP拖放到添加对话框的图片区域。
+<p>用手指在图片上滑动会显示一个绿色边框的方块， 点击下方的<span class="button">"剪切"</span>按钮可以剪切并放大方块内的图像。
+  </p>
+  <p>点击<span class="button">“分析”</span>，系统会识别绿色边框内的图片（未选择则分析整个图片）中包含的金额、日期、商家等信息并提示用户选择填入,并自动推荐三个分类供选择。<p>
+    <p>注意：</p>
+    <ul>
+      <li>商家信息必须在之前的记录中出现过，且在图片文字中出现才可以自动识别。</li>
+      <li>建议选择图片中的相关区域后再分析，以提高准确度。</li>
+      <li><span class="button">“分析”</span>中的分类推荐是根据以往记录中的详情、商家、附带图片中的文字进行统计得到，如果这些信息比较少，则推荐可能不准确</li>
+      <li>如果系统中带图片的记录较多，首次使用<span class="button">“分析”</span>时可能分类推荐为空，这是系统在分析现有记录，过一段时间后再分析，分类推荐即可工作。</li>
+    </ul>
   <h2>3. 汇总</h2>
   进入"分类"标签页并进入某个子分类，或进入"汇总"标签页可以查看每一天的收支记录，以及当月和当年的总收入和总支出。
   可以点击上方的日期并在弹出菜单中选择不同的日期进行汇总。
@@ -58,6 +85,7 @@
   <ul>
     <li>日期弹出菜单只会包含有记录的日期。</li>
     <li>可以选择菜单中的"全部",以显示整年（仅在分类标签页有效）或整月的记录。</li>
+    <li>点击记录以显示更多信息，可以点击图片以放大显示。</li>
     <li>长按记录，在弹出菜单中可以选择
       <span class="button">"编辑"</span>或<span class="button">"删除"</span>记录。
     </li>
@@ -66,6 +94,7 @@
       完成后点击刚才弹出菜单中的“完成选择”，结束选择状态。</li>
       <li>进入"分类"标签页,点击"数据回收"。这里列出了已经删除但还没有用iCloud同步的记录，
         可以点击右上角<span class="button">"编辑"</span>，选择并移动记录到其他子分类，就可以还原被删除记录。</li>
+          <li>进入"分类"标签页,点击“查找记录”。可以在这里用关键字在所有记录的“详情”和“商家”信息中查找。</li>
   </ul>
   <h2>4. 图表</h2>
   进入"图表"标签页可以按记录的不同字段使用图表进行汇总统计。如按年汇总统计，每一年再按月进行汇总统计等等。
@@ -105,6 +134,18 @@
     </tr>
     <tr>
       <td>
+        自动同步
+      </td style="text-align: start">
+      <td style="text-align: start">选中后，系统会每隔2分钟自动同步iCloud。</td>
+    </tr>
+    <tr>
+      <td>
+        进行身份验证
+      </td style="text-align: start">
+      <td style="text-align: start">选中后，每次进入应用后会使用FaceID、TouchID或密码验证身份。</td>
+    </tr>
+    <tr>
+      <td>
         导出到文件
       </td>
       <td style="text-align: start">导出分类和记录数据到CSV文件。注意：不会导出记录中的图像数据。</td>
@@ -116,15 +157,59 @@
       <td style="text-align: start">从CSV文件导入分类和记录数据，导入时会忽略CSV文件中本地已存在的记录。</td>
     </tr>
 <tr>
-  <td>添加自动记录模版<br/>（高级页）</td>
+  <td>自动添加模版</td>
   <td style="text-align: start">添加每月自动记录（如每月31日支出iCloud服务费X元）。
     如果当月不含有此日期，则自动记录在最后一日（如2月不含31日，则自动记录在最后的28或29日）。</td>
 </tr>
 <tr>
-  <td>标签<br/>（高级页）</td>
+  <td>标签管理</td>
   <td style="text-align: start">添加自定义标签。添加后，在添加记录时就可以选择这个标签来标记记录。</td>
 </tr>
   </table>
+  <h2>6. 导入/导出文件格式</h2>
+
+  <p>导入/导出CSV文件中每一行包含一个分类、子分类、标签或记录的数据,各字段用逗号分隔。</p>
+  分类包含以下字段：
+  <ol>
+    <li>0</li>
+    <li>分类ID，任意可唯一标识分类的字符串</li>
+    <li>分类名称</li>
+  </ol>
+  子分类包含以下字段：
+  <ol>
+    <li>1</li>
+    <li>子分类ID，任意可唯一标识分类的字符串</li>
+    <li>子分类名称</li>
+    <li>上级分类ID</li>
+    <li>true -- 收入子分类， false -- 支出子分类</li>
+  </ol>
+记录包含以下字段：
+  <ol>
+    <li>2</li>
+    <li>记录ID，任意可唯一标识记录的字符串</li>
+    <li>上级子分类ID</li>
+    <li>记录日期(年-月-日 时:分)，如2022-01-12 05:15</li>
+    <li>金额， 如100.00</li>
+    <li>0</li>
+    <li>商家</li>
+    <li>详情</li>
+    <li>标签ID</li>
+  </ol>
+  标签包含以下字段：
+  <ol>
+    <li>3</li>
+    <li>标签ID，任意可唯一标识标签的字符串</li>
+    <li>标签名称</li>
+    <li>标签颜色：颜色的RGB数值，范围在0-1之间，用|分割， 如"0.5|0|0.5"</li>
+  </ol>
+  <h2>7. 演示视频</h2>
+<p>
+        <video width="310" height="672" controls>
+          <source src="demo/extract_info_cn.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+</p>
+  <!-- TRANSLATE END -->
 </body>
 
 </html>
