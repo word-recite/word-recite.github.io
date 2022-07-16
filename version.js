@@ -5,6 +5,6 @@ fetch('/version.json')
      .then(function (data) {
           for (var app in data){
               var name =app.split(".")[2]
-              document.getElementById(name).innerHTML = data[app]["iOS"]
+              document.getElementById(name).innerHTML = data[app]["macOS"]
           }
      })
