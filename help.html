@@ -14,14 +14,9 @@
   <h1> 使用说明(v<span id="WordRecite"></span>) </h1>
   <table width='100%' border=1>
     <tr>
-      <td width ='50%'><h3>演示: 添加并记忆单词</h3></td>
-      <td width ='25%'><a href='https://www.bilibili.com/video/BV1JF411P7Lw'>B站</a></td>
-      <td width ='25%'><a href='https://youtu.be/npoiO_SRKk0'>YouTube</a></td>
-    </tr>
-    <tr>
-      <td width ='50%'><h3>演示: 记忆外语听力中的单词</h3></td>
-      <td width ='25%'><a href='https://www.bilibili.com/video/BV1uB4y1C7vw'>B站</a></td>
-      <td width ='25%'><a href='https://youtu.be/wVmCNbmjy44'>YouTube</a></td>
+      <td width ='50%'><h3>演示视频</h3></td>
+      <td width ='25%'><a href='https://space.bilibili.com/2117710829'>B站</a></td>
+      <td width ='25%'><a href='https://www.youtube.com/channel/UC1Lr8-YeW44SiDzIc79b8Cg'>YouTube</a></td>
     </tr>
   </table>
   <h2>1. 添加、编辑、移动和删除目录</h2>
@@ -58,7 +53,7 @@
     </li>
 
     <p>有以下几种添加单词的方式</p>
-    <table border=1>
+    <table border="1">
       <tr>
         <td width="20%">添加方式</td>
         <td>说明</td>
@@ -99,7 +94,7 @@
           用手指在图片上滑动会显示一个绿色边框的方块， <br>点击下方的<span class="button">"剪切"</span>按钮可以剪切并放大方块内的图像。<br />
           点击<span class="button">"识别"</span>按钮会识别方块内的文字，
           如果识别成功将显示单词选择菜单，选择一个单词后会出现添加单词界面，之后操作与查询并添加方式相同。
-          <p>注意：</p>仅支持英语单词，目录字典需要设为英文。
+          <p>注意：</p>仅支持英语、日语单词，目录字典需要设为英文或日文，日文支持需要iOS16版本以上。
         </td>
       </tr>
       <tr>
@@ -107,7 +102,7 @@
         <td style="text-align: start">在包含单词的目录界面点击下方的<span class="button">"添加单词"</span>按钮，
           选择<span class="button">通过拍照添加。</span>
           <br />之后操作与从图片库添加方式相同。
-          <p>注意：</p>仅支持英语单词，目录字典需要设为英文。
+          <p>注意：</p>仅支持英语、日语单词，目录字典需要设为英文或日文，日文支持需要iOS16版本以上。
         </td>
       </tr>
 
@@ -116,7 +111,8 @@
         <td style="text-align: start">在包含单词的目录界面点击下方的<img class="symbol" src="sf/magnifyingglass.circle.png" />按钮，<br />
           再点击文本框左侧的<img class="symbol" src="sf/pencil.and.outline.png" />按钮，进行手写输入。<br />
           输入完成后点击<span class="button">查询</span>。<br>
-          之后操作与查询并添加方式相同。<p>注意：</p>仅支持日语假名和汉字的输入，目录字典需要设为日文。</td>
+          之后操作与查询并添加方式相同。
+          <p>注意：</p>仅支持日语假名和汉字的输入，目录字典需要设为日文。</td>
       </tr>
     </table>
 
@@ -250,9 +246,7 @@
         同步iCloud
       </td>
       <td style="text-align: start">
-        iOS系统中所有记录的数据在应用被删除后会丢失。
-        macOS系统中数据保存在$HOME/Library/Containers/com.guoxiang.WordRecite，删除此目录会导致数据丢失。
-        可以在删除应用或数据目录前将数据同步到iCloud云端，之后从iCloud取回数据。也可以利用iCloud将数据同步到多个设备上。
+        将单词数据同步到iCloud，避免数据丢失，也可以利用iCloud将数据同步到多个设备上（每个设备需要登录到同一iCloud账户）。
         同步数据包括单词、目录以及记录界面（第5节）显示的数据，不包括单词忘记次数。
         同步时会自动检测本地的更改并上传到iCloud，同时下载iCloud上的更新到本地。
         如果本地和iCloud上数据在相同字段都有更新，则以本地更新优先。</td>
@@ -283,6 +277,17 @@
       </td>
       <td style="text-align: start">调整单词语音的速率。范围在0到1之间，数值越大，速率越快。参考第2节"直接添加"。</td>
     </tr>
+    <tr>
+      <td>
+        问题与反馈
+      </td>
+      <td style="text-align: start">
+        APP使用中遇到任何问题或有任何建议，可以使用<span class="button">问题咨询</span>或<span class="button">邮件反馈</span>咨询或建议。
+        使用<span class="button">问题咨询</span>前请打开应用的通知权限，以便及时接收问题回复通知。
+        <p>macOS：系统偏好设置>通知与专注模式>简忆生词本>允许通知</p>
+        <p>iOS：设置>通知>简忆生词本>允许通知</p>
+      </td>
+    </tr>    
   </table>
 
   <h2>9. 导入/导出文件格式</h2>
@@ -306,15 +311,11 @@
   <li>单词</li>
   <li>父目录ID</li>
   <li>创建时间戳，当前时间距离2001年1月1日零点的秒数.</li>
-  <li>单词释义</li>
+  <li>单词释义(日文汉字与释义用反斜杠与全角逗号 \，分割)</li>
   <li>单词发音语言，例如：en-US, ja-JP</li>
   <li>单词详情</li>
 </ol>
 
-<h2>10. 微信公众号</h2>
-<p>
-<img src="icon/weixin.jpg" />
-</p>
 </body>
 
 </html>
