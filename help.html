@@ -32,6 +32,7 @@
         <li>父目录, 可以在此目录添加其他三个类型的目录</li>
         <li>音频目录(文件),需要选择一个音频文件附加到此目录，之后可以播放此音频、提取音频中的单词并添加到目录。</li>
         <li>音频目录(录音),需要录制一段音频附加到此目录，之后可以播放此音频、提取音频中的单词并添加到目录。</li>
+        <li>导入内置单词列表,包含四级、六级、托福单词列表。内置列表中的单词只能编辑，不能添加和删除。</li>
       </ul>
       <p>注意：</p>
       <ul>
@@ -69,7 +70,7 @@
             <li>仅支持英语、日语单词的查询。</li>
             <li>可以使用简体字代替日文汉字查询日语单词</li>
             <li>如果查询单词有时态的变化，会提示单词的原型</li>
-            <li>单词查询结果如果有多种释义，可以点击释义输入框右侧<img class="symbol" src="sf/list.bullet.png" />按钮选择期望记忆的释义。</li>
+            <li>单词查询结果如果有多种释义，可以点击释义输入框右侧<img class="symbol" src="sf/ellipsis.circle.png" />按钮选择期望记忆的释义。</li>
             <li>单词详情中会包含所有释义。</li>
           </ul>
         </td>
@@ -123,15 +124,15 @@
   </ul>
 
   <h2>3. 批量移动单词到其他单词目录</h2>
-  <p>在单词目录界面点开右上方的<img class="symbol" src="sf/list.bullet.png" />按钮，选择<span class="button">“编辑”</span>，
+  <p>在单词目录界面点开右上方的<img class="symbol" src="sf/ellipsis.circle.png" />按钮，选择<span class="button">“编辑”</span>，
     选择目录后点击下方<span class="button">“移动”</span>, 在弹出界面中选择目录后点击右上角的<span class="button">“移动”</span>。
-    点开右上方<img class="symbol" src="sf/list.bullet.png" />按钮，选择<span class="button">“完成”</span>，结束编辑状态。
+    点开右上方<img class="symbol" src="sf/ellipsis.circle.png" />按钮，选择<span class="button">“完成”</span>，结束编辑状态。
   </p>
 
   <h2>4. 批量移动单词目录或音频目录到其他父目录</h2>
-  <p>在父目录界面点开右上方的<img class="symbol" src="sf/list.bullet.png" />按钮，选择<span class="button">“编辑”</span>，
+  <p>在父目录界面点开右上方的<img class="symbol" src="sf/ellipsis.circle.png" />按钮，选择<span class="button">“编辑”</span>，
     选择单词后点击下方<span class="button">“移动”</span>, 在弹出界面中选择目录后点击右上角的<span class="button">“移动”</span>。
-    点开右上方<img class="symbol" src="sf/list.bullet.png" />按钮，选择<span class="button">“完成”</span>，结束编辑状态。
+    点开右上方<img class="symbol" src="sf/ellipsis.circle.png" />按钮，选择<span class="button">“完成”</span>，结束编辑状态。
   </p>
 
   <h2>5. 音频目录</h2>
@@ -176,6 +177,7 @@
       或<span class="button">“还原目录及其下单词”</span>以还原目录及其下子目录和单词。</p>
     <li>还原被删除的单词</li> <p>请选择下方<span class="button">“还原单词”</span>以还原选中的单词，
     <li>被删除的音频目录只能还原为单词目录。</li>
+    <li>无法还原内置单词列表，点击<span class="button">“添加目录”</span>，重新导入即可。</li>    
     <li>悬空数据</li>
     <p>如果向一个目录中添加了未同步过的单词或子目录，而在iCloud同步时，此目录被其他设备删除，目录下的单词和子目录会成为悬空数据，此数据也可以在"数据回收"下还原。
       另外，使用文件导入的单词或目录，如果父目录不存在，也会变为悬空数据。
@@ -216,11 +218,12 @@
   </table>
   <p>&nbsp;&nbsp;&nbsp;&nbsp;每轮测试或听力结束后，会提示进入下一轮对忘记单词的测试。
     也可选择下方<span class="button">“忘记X次以上”</span>菜单，以过滤已经记住的单词。</p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;点开右上方的<img class="symbol" src="sf/list.bullet.png" />按钮可以看到下列选项：</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;点开右上方的<img class="symbol" src="sf/ellipsis.circle.png" />按钮可以看到下列选项：</p>
   <ul>
     <li>选择<span class="button">“乱序”</span>，可以重新排列单词。</li>
     <li>选择<span class="button">“切换测试对象”</span>，在测试模式可以根据释义测试单词。</li>
     <li>选择<span class="button">“重置”</span>，恢复到缺省顺序（单词添加的顺序），并设置单词为未测试状态（不会清除忘记次数）。</li>
+    <li>选择<span class="button">“分组设置”</span>，可以对单词进行分组。在设置界面中配置每个分组的单词数量。可以选择“优先分组忘记过的单词”，让忘记次数多的单词排在前面的分组中，以便优先记忆。</li>
   </ul>
 
 
@@ -234,7 +237,14 @@
       <td width='100'>
         升级软件<br />(无限制使用）
       </td>
-      <td style="text-align: start">未购买本软件之前只能添加最多50个单词，1个音频目录（不含示例音频目录），且不能使用<span class="button">"从文件导入"</span>功能。
+      <td style="text-align: start">
+        未购买本软件包含以下限制：
+        <ul>
+          <li>只能添加最多50个单词</li>
+          <li>只能添加最多3个音频目录</li>
+          <li>只能使用导入单词列表的第一个分组</li>
+          <li>不能使用<span class="button">"从文件导入"</span>功能</li>
+        </ul>
         点击<span class="button">"以XX价格购买本软件"</span>，
         成功购买后会显示<font color="#28e628">“已购买”</font>。
         <p>注意:<br />
